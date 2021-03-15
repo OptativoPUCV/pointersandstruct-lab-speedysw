@@ -60,6 +60,7 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
   Persona *crear=(Persona*) malloc(sizeof(Persona));
   strcpy(crear->nombre,"Ignacio");
   strcpy(crear->rut,"15489XXX-2");
+  crear->edad = 38;
   return crear;
 }
 
