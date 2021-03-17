@@ -96,7 +96,7 @@ void asignarValor(Vector * v, int i, int valor) {
   printf("%d\n",i);
   int j=0;
   for (j=0; j<i; j++){
-    v[j].capacidad=valor;
+    v[i].capacidad=valor;
   }
 }
 
