@@ -81,7 +81,7 @@ Vector * crearVector(int n) {
 
 Vector* crear = (Vector*) malloc(sizeof(Vector));  
 crear->capacidad = n;
-crear->datos = (int*) malloc((n)*sizeof(int));
+crear->datos = (int*) malloc((crear->capacidad)*sizeof(int));
 
 return crear; 
 }
@@ -94,7 +94,7 @@ la cual asigna el valor a la posición i del vector v.
 void asignarValor(Vector * v, int i, int valor) {
   //printf("%d\n",valor);
   v[i].capacidad=valor;
-  printf("%d\n",v[i].capacidad);
+ 
   //printf("%d\n",i);
  /* int j=0;
   for (j=0; j<i; j++){
