@@ -120,7 +120,7 @@ actualiza el vector `c` con el resultado de la suma.
 void sumaV(Vector * a, Vector * b, Vector * c) {
   int i=0;
   for(i=0; i < a->capacidad ; i++){
-    printf("%d",a->datos[i]);
+    printf("%d %d",a->datos[i], b->datos[i]);
   }
   
 }
