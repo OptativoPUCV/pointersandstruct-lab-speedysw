@@ -127,15 +127,17 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
   Vector *b = crearVector(c->capacidad);
   int i=0;
   for(i=0; i < c->capacidad ; i++){
+
     if(i==0){
       asignarValor(a, i, a1);
       asignarValor(b, i, b1);
     }
 
     if(i==1){
-      asignarValor(a, i, a1);
+      asignarValor(a, i, a2);
       asignarValor(b, i, b2);
     }
   }
+
   sumaV(a, b, c);
 }
